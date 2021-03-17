@@ -1,0 +1,6 @@
+framework module Pods_Sueca_Drink {
+  umbrella header "Pods-Sueca Drink-umbrella.h"
+
+  export *
+  module * { export * }
+}

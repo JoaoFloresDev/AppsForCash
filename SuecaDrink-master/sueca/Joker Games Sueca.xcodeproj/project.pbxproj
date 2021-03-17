@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D6EA1062237EBE500174399 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6EA1052237EBE500174399 /* AppDelegate.swift */; };
+		3D6EA1082237EBE500174399 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6EA1072237EBE500174399 /* ViewController.swift */; };
+		3D6EA10B2237EBE500174399 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6EA1092237EBE500174399 /* Main.storyboard */; };
+		3D6EA10D2237EBE900174399 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D6EA10C2237EBE900174399 /* Assets.xcassets */; };
+		3D6EA1102237EBE900174399 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6EA10E2237EBE900174399 /* LaunchScreen.storyboard */; };
+		529DD461062CEEA54F3FBEE3 /* Pods_Sueca_Drink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE9CAB9B2A52E18DBE3F5AA /* Pods_Sueca_Drink.framework */; };
+		C44DFC742496E48300971E0D /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DFC6F2496E48100971E0D /* IAPHelper.swift */; };
+		C44DFC752496E48300971E0D /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DFC702496E48100971E0D /* MasterViewController.swift */; };
+		C44DFC762496E48300971E0D /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DFC712496E48200971E0D /* ProductCell.swift */; };
+		C44DFC772496E48300971E0D /* RazeFaceProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DFC722496E48200971E0D /* RazeFaceProducts.swift */; };
+		C44DFC782496E48300971E0D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DFC732496E48300971E0D /* DetailViewController.swift */; };
+		C44DFC7A2496EF9800971E0D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44DFC792496EF9800971E0D /* StoreKit.framework */; };
+		C464352C23C899CC0033024D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C464352E23C899CC0033024D /* Localizable.strings */; };
+		C4885CF5236CBADC004B1556 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4885CF3236CBADC004B1556 /* CardsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D6EA1022237EBE500174399 /* Sueca Drink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sueca Drink.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D6EA1052237EBE500174399 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D6EA1072237EBE500174399 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D6EA10A2237EBE500174399 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D6EA10C2237EBE900174399 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D6EA10F2237EBE900174399 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D6EA1112237EBE900174399 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C75A0E361E963A8CFC343B6 /* Pods-Sueca Drink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sueca Drink.debug.xcconfig"; path = "Target Support Files/Pods-Sueca Drink/Pods-Sueca Drink.debug.xcconfig"; sourceTree = "<group>"; };
+		6AE9CAB9B2A52E18DBE3F5AA /* Pods_Sueca_Drink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sueca_Drink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		918CFB2B1BB997C898251A99 /* Pods-Sueca Drink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sueca Drink.release.xcconfig"; path = "Target Support Files/Pods-Sueca Drink/Pods-Sueca Drink.release.xcconfig"; sourceTree = "<group>"; };
+		C44DFC6F2496E48100971E0D /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
+		C44DFC702496E48100971E0D /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		C44DFC712496E48200971E0D /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		C44DFC722496E48200971E0D /* RazeFaceProducts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RazeFaceProducts.swift; sourceTree = "<group>"; };
+		C44DFC732496E48300971E0D /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C44DFC792496EF9800971E0D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		C464352623C899880033024D /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
+		C464352723C899880033024D /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		C464352823C899990033024D /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Main.strings"; sourceTree = "<group>"; };
+		C464352923C899990033024D /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		C464352A23C899AB0033024D /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Main.strings"; sourceTree = "<group>"; };
+		C464352B23C899AB0033024D /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		C464352D23C899CC0033024D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C464352F23C899D30033024D /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		C464353023C899D70033024D /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		C464353123C899D90033024D /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		C4885CF3236CBADC004B1556 /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D6EA0FF2237EBE500174399 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				529DD461062CEEA54F3FBEE3 /* Pods_Sueca_Drink.framework in Frameworks */,
+				C44DFC7A2496EF9800971E0D /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D6EA0F92237EBE500174399 = {
+			isa = PBXGroup;
+			children = (
+				3D6EA1042237EBE500174399 /* Calculadora */,
+				3D6EA1032237EBE500174399 /* Products */,
+				7F38B1CF992CC29455A2A5C4 /* Pods */,
+				CC287A9F7C8A302DEE07606F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3D6EA1032237EBE500174399 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D6EA1022237EBE500174399 /* Sueca Drink.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D6EA1042237EBE500174399 /* Calculadora */ = {
+			isa = PBXGroup;
+			children = (
+				3D7C50B3225151DC00535F55 /* Model */,
+				3D7C50B4225151E200535F55 /* View */,
+				3D7C50B5225151E900535F55 /* Control */,
+				3D6EA1052237EBE500174399 /* AppDelegate.swift */,
+				3D6EA1112237EBE900174399 /* Info.plist */,
+				C464352E23C899CC0033024D /* Localizable.strings */,
+			);
+			path = Calculadora;
+			sourceTree = "<group>";
+		};
+		3D7C50B3225151DC00535F55 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C44DFC732496E48300971E0D /* DetailViewController.swift */,
+				C44DFC6F2496E48100971E0D /* IAPHelper.swift */,
+				C44DFC702496E48100971E0D /* MasterViewController.swift */,
+				C44DFC712496E48200971E0D /* ProductCell.swift */,
+				C44DFC722496E48200971E0D /* RazeFaceProducts.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D7C50B4225151E200535F55 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D6EA1092237EBE500174399 /* Main.storyboard */,
+				3D6EA10E2237EBE900174399 /* LaunchScreen.storyboard */,
+				3D6EA10C2237EBE900174399 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D7C50B5225151E900535F55 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				3D6EA1072237EBE500174399 /* ViewController.swift */,
+				C4885CF3236CBADC004B1556 /* CardsViewController.swift */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		7F38B1CF992CC29455A2A5C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C75A0E361E963A8CFC343B6 /* Pods-Sueca Drink.debug.xcconfig */,
+				918CFB2B1BB997C898251A99 /* Pods-Sueca Drink.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CC287A9F7C8A302DEE07606F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C44DFC792496EF9800971E0D /* StoreKit.framework */,
+				6AE9CAB9B2A52E18DBE3F5AA /* Pods_Sueca_Drink.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D6EA1012237EBE500174399 /* Joker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D6EA1142237EBE900174399 /* Build configuration list for PBXNativeTarget "Joker" */;
+			buildPhases = (
+				DEF2AE41AB2AE308C8C67156 /* [CP] Check Pods Manifest.lock */,
+				3D6EA0FE2237EBE500174399 /* Sources */,
+				3D6EA0FF2237EBE500174399 /* Frameworks */,
+				3D6EA1002237EBE500174399 /* Resources */,
+				9F259AB9ED669BBA63AC2997 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Joker;
+			productName = Calculadora;
+			productReference = 3D6EA1022237EBE500174399 /* Sueca Drink.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D6EA0FA2237EBE500174399 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Gustavo Lima";
+				TargetAttributes = {
+					3D6EA1012237EBE500174399 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+					};
+				};
+			};
+			buildConfigurationList = 3D6EA0FD2237EBE500174399 /* Build configuration list for PBXProject "Joker Games Sueca" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"pt-BR",
+				"en-GB",
+				"pt-PT",
+			);
+			mainGroup = 3D6EA0F92237EBE500174399;
+			productRefGroup = 3D6EA1032237EBE500174399 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D6EA1012237EBE500174399 /* Joker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D6EA1002237EBE500174399 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C464352C23C899CC0033024D /* Localizable.strings in Resources */,
+				3D6EA1102237EBE900174399 /* LaunchScreen.storyboard in Resources */,
+				3D6EA10D2237EBE900174399 /* Assets.xcassets in Resources */,
+				3D6EA10B2237EBE500174399 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9F259AB9ED669BBA63AC2997 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sueca Drink/Pods-Sueca Drink-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sueca Drink/Pods-Sueca Drink-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sueca Drink/Pods-Sueca Drink-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEF2AE41AB2AE308C8C67156 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sueca Drink-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D6EA0FE2237EBE500174399 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C44DFC782496E48300971E0D /* DetailViewController.swift in Sources */,
+				3D6EA1082237EBE500174399 /* ViewController.swift in Sources */,
+				3D6EA1062237EBE500174399 /* AppDelegate.swift in Sources */,
+				C44DFC752496E48300971E0D /* MasterViewController.swift in Sources */,
+				C4885CF5236CBADC004B1556 /* CardsViewController.swift in Sources */,
+				C44DFC742496E48300971E0D /* IAPHelper.swift in Sources */,
+				C44DFC762496E48300971E0D /* ProductCell.swift in Sources */,
+				C44DFC772496E48300971E0D /* RazeFaceProducts.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3D6EA1092237EBE500174399 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D6EA10A2237EBE500174399 /* Base */,
+				C464352623C899880033024D /* pt-BR */,
+				C464352823C899990033024D /* en-GB */,
+				C464352A23C899AB0033024D /* pt-PT */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D6EA10E2237EBE900174399 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D6EA10F2237EBE900174399 /* Base */,
+				C464352723C899880033024D /* pt-BR */,
+				C464352923C899990033024D /* en-GB */,
+				C464352B23C899AB0033024D /* pt-PT */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C464352E23C899CC0033024D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C464352D23C899CC0033024D /* en */,
+				C464352F23C899D30033024D /* en-GB */,
+				C464353023C899D70033024D /* pt-BR */,
+				C464353123C899D90033024D /* pt-PT */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D6EA1122237EBE900174399 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D6EA1132237EBE900174399 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D6EA1152237EBE900174399 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C75A0E361E963A8CFC343B6 /* Pods-Sueca Drink.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 23;
+				DEVELOPMENT_TEAM = NZC6LC8NWM;
+				INFOPLIST_FILE = Calculadora/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 23;
+				PRODUCT_BUNDLE_IDENTIFIER = joaoFlores.Sueca;
+				PRODUCT_NAME = "Sueca Drink";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D6EA1162237EBE900174399 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 918CFB2B1BB997C898251A99 /* Pods-Sueca Drink.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 23;
+				DEVELOPMENT_TEAM = NZC6LC8NWM;
+				INFOPLIST_FILE = Calculadora/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 23;
+				PRODUCT_BUNDLE_IDENTIFIER = joaoFlores.Sueca;
+				PRODUCT_NAME = "Sueca Drink";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D6EA0FD2237EBE500174399 /* Build configuration list for PBXProject "Joker Games Sueca" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D6EA1122237EBE900174399 /* Debug */,
+				3D6EA1132237EBE900174399 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D6EA1142237EBE900174399 /* Build configuration list for PBXNativeTarget "Joker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D6EA1152237EBE900174399 /* Debug */,
+				3D6EA1162237EBE900174399 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D6EA0FA2237EBE500174399 /* Project object */;
+}

@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "Clique na carta para começar"; ObjectID = "GnK-vE-i7o"; */
+"GnK-vE-i7o.text" = "Clique na carta para começar";
+
+/* Class = "UILabel"; text = "Credits"; ObjectID = "N56-py-Xtk"; */
+"N56-py-Xtk.text" = "Credits";
+
+/* Class = "UILabel"; text = "Bom Jogo!"; ObjectID = "ZHm-S9-cM7"; */
+"ZHm-S9-cM7.text" = "Bom Jogo!";
+
+/* Class = "UILabel"; text = "Cards projected by brgfx / Freepik"; ObjectID = "awe-2d-FxJ"; */
+"awe-2d-FxJ.text" = "Cards projected by brgfx / Freepik";
+
+/* Class = "UIButton"; normalTitle = "Fechar"; ObjectID = "fZm-d0-2DO"; */
+"fZm-d0-2DO.normalTitle" = "Fechar";
+
+/* Class = "UILabel"; text = "Icon Designed by katemangostar / Freepik"; ObjectID = "oJr-du-Xjk"; */
+"oJr-du-Xjk.text" = "Icon Designed by katemangostar / Freepik";
+
+/* Class = "UILabel"; text = "All icons made by Freepik from www.flaticon.com"; ObjectID = "x4N-wO-JZs"; */
+"x4N-wO-JZs.text" = "All icons made by Freepik from www.flaticon.com";
