@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="Pop_Boy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="QW3-Te-ynN" userLabel="Music Slider">
+                                <rect key="frame" x="263.5" y="140.5" width="204" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="CKz-D6-rhf"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="musicVolumeChangedWithSender:" destination="BV1-FR-VrT" eventType="valueChanged" id="pMa-f3-yID"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="7dd-a9-1Yj" userLabel="Effects Slider">
+                                <rect key="frame" x="263.5" y="196.5" width="204" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="ecg-3W-pRp"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="effectsVolumeChangedWithSender:" destination="BV1-FR-VrT" eventType="valueChanged" id="ZAc-Uj-uVh"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="QW3-Te-ynN" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" constant="-32" id="UfK-lN-GNa"/>
+                            <constraint firstItem="QW3-Te-ynN" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" constant="32" id="nzW-NM-7zO"/>
+                            <constraint firstItem="7dd-a9-1Yj" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" constant="32" id="tGl-yQ-JgK"/>
+                            <constraint firstItem="7dd-a9-1Yj" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" constant="24" id="w5w-kl-URy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pfI-Qq-QLe"/>
+                    </view>
+                    <connections>
+                        <outlet property="effectsSlider" destination="7dd-a9-1Yj" id="uia-rz-bas"/>
+                        <outlet property="volumeSlider" destination="QW3-Te-ynN" id="a03-bl-6uZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.61607142857142" y="111.59420289855073"/>
+        </scene>
+    </scenes>
+</document>

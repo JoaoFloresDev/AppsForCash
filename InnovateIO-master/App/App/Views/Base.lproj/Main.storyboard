@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JUY-4S-UHw">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="c6N-UM-EaN">
+            <objects>
+                <tabBarController modalPresentationStyle="fullScreen" id="JUY-4S-UHw" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="fSU-OZ-C1W"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Dnj-zh-SB5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="PfC-52-MxK" kind="relationship" relationship="viewControllers" id="hqp-Bf-O5P"/>
+                        <segue destination="8ne-tQ-UtC" kind="relationship" relationship="viewControllers" id="uKr-v0-MJ8"/>
+                        <segue destination="aMa-gw-PFY" kind="relationship" relationship="viewControllers" id="8Lf-TJ-Lou"/>
+                        <segue destination="1uY-Tm-dCp" kind="relationship" relationship="viewControllers" id="WDM-yU-FWH"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k9A-Yc-VMq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-121" y="-175"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="ygr-Hx-3Or">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="PfC-52-MxK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="9r9-tG-5zx"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xT4-2F-gZ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="800" y="-467"/>
+        </scene>
+        <!--Calendar-->
+        <scene sceneID="WRX-yh-D5d">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Calendar" id="aMa-gw-PFY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Tgc-Ul-p5b"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m80-WR-k0K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="811" y="-414"/>
+        </scene>
+        <!--Meals-->
+        <scene sceneID="4sG-vh-w9C">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Meals" id="8ne-tQ-UtC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="71i-Us-RsX"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0tZ-83-FTy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="798" y="-362"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="F77-JN-RpF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" id="1uY-Tm-dCp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Zqw-4u-y9B"/>
+                    <navigationItem key="navigationItem" id="kZk-rz-yRp"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YEf-yp-YEv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="808" y="-307"/>
+        </scene>
+        <!--Tutorial View Controller-->
+        <scene sceneID="VEc-eK-zyv">
+            <objects>
+                <viewController storyboardIdentifier="Tutorial" id="ZmZ-wQ-dut" customClass="TutorialViewController" customModule="My_Way" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J5F-iV-h7H">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9P-OV-OQV">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cj-KG-tlK">
+                                <rect key="frame" x="88" y="807" width="239" height="55"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5cj-KG-tlK" secondAttribute="height" multiplier="239:55" id="WA0-qg-G0F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="Começar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JUY-4S-UHw" kind="show" id="hq6-cx-Ltv"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="27D-zs-yN2">
+                                <rect key="frame" x="197" y="760" width="20" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="Xx2-Rh-ZFT"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Q9P-OV-OQV" firstAttribute="top" secondItem="J5F-iV-h7H" secondAttribute="top" id="2IB-J8-bCh"/>
+                            <constraint firstItem="5cj-KG-tlK" firstAttribute="leading" secondItem="qhE-Nh-doa" secondAttribute="leading" constant="88" id="IBz-vq-za4"/>
+                            <constraint firstItem="qhE-Nh-doa" firstAttribute="trailing" secondItem="5cj-KG-tlK" secondAttribute="trailing" constant="87" id="JxY-kA-05K"/>
+                            <constraint firstAttribute="bottom" secondItem="Q9P-OV-OQV" secondAttribute="bottom" id="P8J-Z9-lj2"/>
+                            <constraint firstItem="27D-zs-yN2" firstAttribute="centerX" secondItem="J5F-iV-h7H" secondAttribute="centerX" id="eyX-FD-aLA"/>
+                            <constraint firstItem="5cj-KG-tlK" firstAttribute="bottom" secondItem="J5F-iV-h7H" secondAttribute="bottomMargin" id="kAC-II-ItL"/>
+                            <constraint firstItem="5cj-KG-tlK" firstAttribute="top" secondItem="27D-zs-yN2" secondAttribute="bottom" constant="10" id="lM3-Gh-WHx"/>
+                            <constraint firstItem="Q9P-OV-OQV" firstAttribute="trailing" secondItem="J5F-iV-h7H" secondAttribute="trailing" id="pTa-RZ-6es"/>
+                            <constraint firstItem="Q9P-OV-OQV" firstAttribute="leading" secondItem="J5F-iV-h7H" secondAttribute="leading" id="w3z-7l-mjB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qhE-Nh-doa"/>
+                    </view>
+                    <size key="freeformSize" width="414" height="896"/>
+                    <connections>
+                        <outlet property="pageControl" destination="27D-zs-yN2" id="nOK-Vj-haP"/>
+                        <outlet property="scrollView" destination="Q9P-OV-OQV" id="eSE-1y-n58"/>
+                        <outlet property="startButton" destination="5cj-KG-tlK" id="ALm-w7-fEu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L2c-RQ-N3P" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1013" y="-177"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="QuestionHeaderTableViewCell" customModule="MacroCHallengeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpP-cu-Z1m" userLabel="lblTopic">
+                        <rect key="frame" x="24" y="8" width="44.5" height="4"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTX-Nc-CDI" userLabel="lblTime">
+                        <rect key="frame" x="249" y="-0.5" width="47" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="47" id="szj-zm-oZb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3bb-u0-ZbR" userLabel="separator">
+                        <rect key="frame" x="24" y="28" width="272" height="1"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="kUv-k7-q5O"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cronômetro:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDf-TB-8wX">
+                        <rect key="frame" x="145" y="-0.5" width="96" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="gpP-cu-Z1m" firstAttribute="centerY" secondItem="UTX-Nc-CDI" secondAttribute="centerY" id="B5q-1A-6S2"/>
+                    <constraint firstItem="bDf-TB-8wX" firstAttribute="centerY" secondItem="UTX-Nc-CDI" secondAttribute="centerY" id="Ize-P2-Kuh"/>
+                    <constraint firstItem="gpP-cu-Z1m" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="MdY-KF-IZG"/>
+                    <constraint firstItem="3bb-u0-ZbR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="Po2-N6-a0E"/>
+                    <constraint firstItem="3bb-u0-ZbR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="bottom" constant="-16" id="SMd-cK-oUx"/>
+                    <constraint firstItem="gpP-cu-Z1m" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="fRD-95-Url"/>
+                    <constraint firstAttribute="bottom" secondItem="gpP-cu-Z1m" secondAttribute="bottom" constant="32" id="fdc-vN-tNy"/>
+                    <constraint firstAttribute="trailing" secondItem="UTX-Nc-CDI" secondAttribute="trailing" constant="24" id="jBb-Fp-Ez4"/>
+                    <constraint firstItem="UTX-Nc-CDI" firstAttribute="leading" secondItem="bDf-TB-8wX" secondAttribute="trailing" constant="8" id="tcs-eD-bao"/>
+                    <constraint firstAttribute="trailing" secondItem="3bb-u0-ZbR" secondAttribute="trailing" constant="24" id="yVh-sV-uSt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblTime" destination="UTX-Nc-CDI" id="Zcd-Ol-seQ"/>
+                <outlet property="lblTopic" destination="gpP-cu-Z1m" id="jIm-9S-OL3"/>
+            </connections>
+            <point key="canvasLocation" x="-120.28985507246378" y="65.625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

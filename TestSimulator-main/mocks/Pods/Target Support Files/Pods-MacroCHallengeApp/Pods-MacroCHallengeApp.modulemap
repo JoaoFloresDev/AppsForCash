@@ -1,0 +1,6 @@
+framework module Pods_MacroCHallengeApp {
+  umbrella header "Pods-MacroCHallengeApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

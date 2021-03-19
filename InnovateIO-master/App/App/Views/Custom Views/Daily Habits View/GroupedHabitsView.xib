@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GroupedHabitsView" customModule="My_Way" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="gGV-5S-ibQ"/>
+                <outlet property="habitsStackView" destination="AGD-G6-YA8" id="QdR-hi-SQM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="278" height="96"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="AGD-G6-YA8">
+                    <rect key="frame" x="0.0" y="0.0" width="278" height="96"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6pu-AB-jOc" customClass="SingleHabitView" customModule="My_Way" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="60" height="96"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="qsy-OD-EHG"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="habitIdentifier" value="drinkWater"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OGx-0a-L5S" customClass="SingleHabitView" customModule="My_Way" customModuleProvider="target">
+                            <rect key="frame" x="109" y="0.0" width="60" height="96"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="WE8-Db-d1m"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="habitIdentifier" value="fruit"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qxq-cw-jKT" customClass="SingleHabitView" customModule="My_Way" customModuleProvider="target">
+                            <rect key="frame" x="218" y="0.0" width="60" height="96"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="g0C-Yl-Oc3"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="habitIdentifier" value="exercise"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="AGD-G6-YA8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LNn-nw-lpz"/>
+                <constraint firstAttribute="bottom" secondItem="AGD-G6-YA8" secondAttribute="bottom" id="fsT-YX-z9m"/>
+                <constraint firstAttribute="trailing" secondItem="AGD-G6-YA8" secondAttribute="trailing" id="pcd-bX-EV0"/>
+                <constraint firstItem="AGD-G6-YA8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qEL-1b-0hN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139" y="82"/>
+        </view>
+    </objects>
+</document>

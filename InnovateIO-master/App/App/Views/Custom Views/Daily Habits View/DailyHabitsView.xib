@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DailyHabitsView" customModule="My_Way" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="aXd-qh-z1Q"/>
+                <outlet property="groupedHabitsView" destination="9ob-Cs-LI9" id="6h5-Il-Bk4"/>
+                <outlet property="todayRatingView" destination="dMd-QP-HUo" id="J8B-q2-5AA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="BKI-O3-brt">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XJD-r3-0Nh" customClass="RoundedView" customModule="My_Way" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="657"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="glB-d6-gIX">
+                                    <rect key="frame" x="0.0" y="8" width="414" height="633"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Alimentação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gf5-41-qiG">
+                                            <rect key="frame" x="136.5" y="0.0" width="141.5" height="29"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VIS-PD-Wku">
+                                            <rect key="frame" x="54.5" y="37" width="305" height="39.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Insira a qualidade da alimentação no dia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dje-JA-cUc">
+                                                    <rect key="frame" x="0.0" y="0.0" width="305" height="31.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <constraints>
+                                                <constraint firstItem="dje-JA-cUc" firstAttribute="top" secondItem="VIS-PD-Wku" secondAttribute="top" id="P5x-Iu-L0A"/>
+                                                <constraint firstItem="dje-JA-cUc" firstAttribute="leading" secondItem="VIS-PD-Wku" secondAttribute="leading" id="Rr0-zS-WLK"/>
+                                                <constraint firstAttribute="trailing" secondItem="dje-JA-cUc" secondAttribute="trailing" id="agu-FH-YvK"/>
+                                                <constraint firstAttribute="bottom" secondItem="dje-JA-cUc" secondAttribute="bottom" constant="8" id="zsa-zN-aHE"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dMd-QP-HUo" customClass="RatingView" customModule="My_Way" customModuleProvider="target">
+                                            <rect key="frame" x="77" y="84.5" width="260" height="548.5"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="260" id="n3o-sv-vKe"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="glB-d6-gIX" secondAttribute="bottom" constant="16" id="6V4-pO-qJx"/>
+                                <constraint firstItem="glB-d6-gIX" firstAttribute="top" secondItem="XJD-r3-0Nh" secondAttribute="top" constant="8" id="bM9-1h-Ldr"/>
+                                <constraint firstAttribute="trailing" secondItem="glB-d6-gIX" secondAttribute="trailing" id="mDm-Hq-KNT"/>
+                                <constraint firstItem="glB-d6-gIX" firstAttribute="leading" secondItem="XJD-r3-0Nh" secondAttribute="leading" id="tfq-pA-VFb"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="22"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cQ9-FF-dz0" customClass="RoundedView" customModule="My_Way" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="689" width="414" height="207"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ple-mp-cEm">
+                                    <rect key="frame" x="0.0" y="8" width="414" height="183"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Hábitos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQ4-7M-NFI">
+                                            <rect key="frame" x="163.5" y="0.0" width="87.5" height="29"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gll-bC-jRB">
+                                            <rect key="frame" x="63.5" y="37" width="287.5" height="27.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insira os hábitos praticados no dia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="By5-PP-DPh">
+                                                    <rect key="frame" x="0.0" y="0.0" width="287.5" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <constraints>
+                                                <constraint firstItem="By5-PP-DPh" firstAttribute="top" secondItem="gll-bC-jRB" secondAttribute="top" id="0mm-xy-oJp"/>
+                                                <constraint firstItem="By5-PP-DPh" firstAttribute="leading" secondItem="gll-bC-jRB" secondAttribute="leading" id="Pra-Ex-5LD"/>
+                                                <constraint firstAttribute="bottom" secondItem="By5-PP-DPh" secondAttribute="bottom" constant="8" id="Pyn-0H-KSS"/>
+                                                <constraint firstAttribute="trailing" secondItem="By5-PP-DPh" secondAttribute="trailing" id="knq-kq-R3p"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ob-Cs-LI9" customClass="GroupedHabitsView" customModule="My_Way" customModuleProvider="target">
+                                            <rect key="frame" x="68" y="72.5" width="278" height="110.5"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="278" id="gA0-rN-G2N"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="ple-mp-cEm" firstAttribute="leading" secondItem="cQ9-FF-dz0" secondAttribute="leading" id="Kqk-qq-hvu"/>
+                                <constraint firstAttribute="trailing" secondItem="ple-mp-cEm" secondAttribute="trailing" id="dbC-Rw-dfT"/>
+                                <constraint firstAttribute="bottom" secondItem="ple-mp-cEm" secondAttribute="bottom" constant="16" id="kZV-W8-bFv"/>
+                                <constraint firstItem="ple-mp-cEm" firstAttribute="top" secondItem="cQ9-FF-dz0" secondAttribute="top" constant="8" id="psd-VH-QsK"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="22"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="BKI-O3-brt" secondAttribute="trailing" id="5r8-NQ-orm"/>
+                <constraint firstItem="BKI-O3-brt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KjC-0g-gts"/>
+                <constraint firstAttribute="bottom" secondItem="BKI-O3-brt" secondAttribute="bottom" id="esm-mG-h3e"/>
+                <constraint firstItem="BKI-O3-brt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wJh-To-ubC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="78.348214285714278"/>
+        </view>
+    </objects>
+</document>

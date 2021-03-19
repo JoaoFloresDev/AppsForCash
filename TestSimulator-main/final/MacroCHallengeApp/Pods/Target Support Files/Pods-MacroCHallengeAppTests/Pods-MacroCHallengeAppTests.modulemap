@@ -1,0 +1,6 @@
+framework module Pods_MacroCHallengeAppTests {
+  umbrella header "Pods-MacroCHallengeAppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
